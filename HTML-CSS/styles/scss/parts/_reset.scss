@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+img,
+q,
+strong,
+sub,
+sup,
+i,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+audio,
+video,
+button,
+select,
+option,
+optgroup,
+textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: center/cover no-repeat;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  background-color: var(--white);
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden auto;
+  padding: 0 calc((100vw - var(--max-width)) / 2);
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--content);
+}
+button,
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: inherit;
+}
