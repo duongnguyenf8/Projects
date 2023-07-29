@@ -39,6 +39,10 @@ header.header#header {
   .header__logo {
     @include responsive(tablet) {
       display: block;
+      height: 100px;
+    }
+    @include responsive("mobile-md") {
+      display: block;
       height: 80px;
     }
   }
@@ -46,10 +50,16 @@ header.header#header {
 .header__action {
   @include flex(row, between, start, row);
   gap: 60px;
+  @include responsive(tablet) {
+    gap: 20px;
+  }
   .navbar {
     @include flex(row, row, center, row);
     gap: 60px;
     @include responsive(tablet) {
+      gap: 20px;
+    }
+    @include responsive(mobile) {
       position: fixed;
       top: 120px;
       bottom: 0;
@@ -79,6 +89,8 @@ header.header#header {
         }
       }
       @include responsive(tablet) {
+        padding: 0;
+        @include font(link, p4, A);
         &:first-child {
           display: block;
         }
@@ -102,7 +114,7 @@ header.header#header {
     }
     &__toggle {
       display: none;
-      @include responsive(tablet) {
+      @include responsive(mobile) {
         display: block;
         width: 30px;
         height: 30px;
