@@ -15,9 +15,44 @@
   </head>
   <body>
     <div class="container">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, sapiente!
-      Earum harum quos cum sit molestias sunt reprehenderit commodi maxime qui
-      veniam? Rem assumenda blanditiis mollitia tempora sed deserunt minus.
+      <header class="header" id="header">
+        <a href="/" class="header__logo">
+          <img src="../assets/logo/logo.png" alt="logo" class="header__logo_img" />
+        </a>
+        <div class="header__action">
+          <nav class="navbar" id="header_navbar">
+            <a href="/" class="navbar__navlink"> Trang chủ </a>
+            <a href="about.html" class="navbar__navlink">
+              Về Greenchop
+            </a>
+            <a href="products.html" class="navbar__navlink"> Sản phẩm </a>
+            <a href="news.html" class="navbar__navlink"> Tin tức </a>
+            <a
+              href="contact.html"
+              class="navbar__navlink navbar__navlink--active"
+            >
+              Liên hệ
+            </a>
+          </nav>
+          <div class="action-button">
+            <a
+              href="cart.html"
+              class="action-button__cart"
+              data-count="3"
+            >
+              <img src="../assets/icons/cart.svg" alt="icon-cart" />
+            </a>
+            <a href="#" class="action-button__search">
+              <img src="../assets/icons/search.svg" alt="icon-search" />
+            </a>
+            <button class="action-button__toggle" id="header_toggle-menu">
+              <span class="burger"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main></main>
     </div>
+    <script src="../assets/js/index.js"></script>
   </body>
 </html>
